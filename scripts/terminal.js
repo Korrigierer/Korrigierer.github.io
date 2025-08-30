@@ -366,6 +366,10 @@ document.addEventListener('DOMContentLoaded', () => {
         send();
     }
 
+    function showImage() {
+        output.innerHTML = "<img src='assets/korri_logo.png' alt='Korri Emblem'>";
+    }
+
 
     // =======================
     // Command Mapping
@@ -385,7 +389,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ping: { description: "Simulates network ping.", args: "", action: pingCommand },
         font: { description: "Switches terminal font style.", args: "[font_name]", action: switchFont },
         theme: { description: "Changes background/text colors.", args: "[1-12]", action: changeTheme },
-        clear: { description: "Clears the terminal screen.", args: "", action: clearTerminal }
+        clear: { description: "Clears the terminal screen.", args: "", action: clearTerminal },
+        emblem: { description: "Shows a neat picture :D", args: "", action: showImage }
     };
 
     // =======================
@@ -438,4 +443,5 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     });
+
 });
