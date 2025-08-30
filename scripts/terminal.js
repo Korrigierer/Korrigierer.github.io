@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showImage() {
-        output.innerHTML = "<img src='assets/korri_logo.png' alt='Korri Emblem'>";
+        output.innerHTML = "<img src='/assets/korri_logo.png' alt='Korri Emblem'>";
     }
 
 
@@ -445,3 +445,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
